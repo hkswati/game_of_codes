@@ -1,0 +1,74 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Sun Dec 17 17:18:54 2017
+| Host         : HKS running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file game_logic_control_sets_placed.rpt
+| Design       : game_logic
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    10 |
+| Unused register locations in slices containing registers |    25 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              55 |           21 |
+| No           | No                    | Yes                    |              16 |            3 |
+| No           | Yes                   | No                     |              29 |            8 |
+| Yes          | No                    | No                     |              17 |            7 |
+| Yes          | No                    | Yes                    |               4 |            1 |
+| Yes          | Yes                   | No                     |              38 |           12 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------------+--------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                    Enable Signal                   |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++----------------+----------------------------------------------------+--------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | keypad4X4_inst0/FSM_onehot_row[4]_i_1_n_0          |                                                  |                1 |              4 |
+|  clk_IBUF_BUFG | steppermotor_wrapper_inst0/rotation_duration_saved |                                                  |                2 |              4 |
+|  clk_IBUF_BUFG | keypad4X4_inst0/count_deb                          | keypad4X4_inst0/count_deb[5]_i_1_n_0             |                2 |              6 |
+|  clk_IBUF_BUFG | keypad4X4_inst0/key_valid                          | reset_IBUF                                       |                2 |              8 |
+|  clk_IBUF_BUFG | start_IBUF                                         | reset_IBUF                                       |                4 |              8 |
+|  clk_IBUF_BUFG | keypad4X4_inst0/clk_en2                            |                                                  |                4 |              9 |
+|  clk_IBUF_BUFG |                                                    | reset_IBUF                                       |                3 |             16 |
+|  clk_IBUF_BUFG | steppermotor_wrapper_inst0/stepmotor_inst0/sel     | steppermotor_wrapper_inst0/stepmotor_inst0/clear |                5 |             20 |
+|  clk_IBUF_BUFG |                                                    | steppermotor_wrapper_inst0/count[28]_i_1_n_0     |                8 |             29 |
+|  clk_IBUF_BUFG |                                                    |                                                  |               22 |             56 |
++----------------+----------------------------------------------------+--------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 4      |                     2 |
+| 6      |                     1 |
+| 8      |                     2 |
+| 9      |                     1 |
+| 16+    |                     4 |
++--------+-----------------------+
+
+

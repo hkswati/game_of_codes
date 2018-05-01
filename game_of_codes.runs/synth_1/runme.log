@@ -1,0 +1,1405 @@
+
+*** Running vivado
+    with args -log game_logic.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source game_logic.tcl
+
+
+****** Vivado v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source game_logic.tcl -notrace
+Command: synth_design -top game_logic -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6808 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:40 . Memory (MB): peak = 282.824 ; gain = 72.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'game_logic' [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/new/game_logic.sv:22]
+INFO: [Synth 8-638] synthesizing module 'code_gen' [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/new/code_gen.sv:24]
+INFO: [Synth 8-256] done synthesizing module 'code_gen' (1#1) [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/new/code_gen.sv:24]
+INFO: [Synth 8-638] synthesizing module 'flopenr' [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/new/flopenr.sv:22]
+INFO: [Synth 8-256] done synthesizing module 'flopenr' (2#1) [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/new/flopenr.sv:22]
+INFO: [Synth 8-638] synthesizing module 'keypad4X4' [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/keypad4X4.sv:25]
+INFO: [Synth 8-638] synthesizing module 'LUT4' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b1010101010101011 
+INFO: [Synth 8-256] done synthesizing module 'LUT4' (3#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT2' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+	Parameter INIT bound to: 4'b0010 
+INFO: [Synth 8-256] done synthesizing module 'LUT2' (4#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (5#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized0' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized0' (5#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized1' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized1' (5#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized2' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized2' (5#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized3' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized3' (5#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'GND' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:4826]
+INFO: [Synth 8-256] done synthesizing module 'GND' (6#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:4826]
+INFO: [Synth 8-638] synthesizing module 'VCC' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:44693]
+INFO: [Synth 8-256] done synthesizing module 'VCC' (7#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:44693]
+INFO: [Synth 8-638] synthesizing module 'LUT3' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+	Parameter INIT bound to: 8'b10000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3' (8#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+INFO: [Synth 8-638] synthesizing module 'LUT6' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+	Parameter INIT bound to: 64'b1000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6' (9#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+INFO: [Synth 8-638] synthesizing module 'LUT5' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20288]
+	Parameter INIT bound to: 32'b10000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5' (10#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20288]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized0' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+	Parameter INIT bound to: 64'b0000000000000000100000000000000000000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized0' (10#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized4' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized4' (10#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized1' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized1' (10#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized0' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20288]
+	Parameter INIT bound to: 32'b00000000000000000000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized0' (10#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20288]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized2' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized2' (10#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized5' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized5' (10#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized6' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized6' (10#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized7' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized7' (10#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized8' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized8' (10#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized9' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized9' (10#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20134]
+	Parameter INIT bound to: 2'b01 
+INFO: [Synth 8-256] done synthesizing module 'LUT1' (11#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20134]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized0' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+	Parameter INIT bound to: 4'b0110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized0' (11#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized0' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+	Parameter INIT bound to: 8'b01111000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized0' (11#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized0' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b0111111110000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized0' (11#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized1' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20288]
+	Parameter INIT bound to: 32'b01111111111111111000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized1' (11#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20288]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized3' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+	Parameter INIT bound to: 64'b1111011011111111111111111111011011110000111100001111000011110000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized3' (11#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized1' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized1' (11#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized4' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+	Parameter INIT bound to: 64'b0111111111111111111111111111111110000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized4' (11#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized5' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+	Parameter INIT bound to: 64'b0111110111111111111111110111110100000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized5' (11#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized6' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+	Parameter INIT bound to: 64'b0111111111111111111111111111111111111111111111111111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized6' (11#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized10' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized10' (11#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized11' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized11' (11#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized12' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized12' (11#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized13' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized13' (11#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized14' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized14' (11#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized15' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized15' (11#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized16' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized16' (11#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:961]
+INFO: [Synth 8-256] done synthesizing module 'CARRY4' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:961]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized17' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized17' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized18' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized18' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized19' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized19' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized20' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized20' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized21' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized21' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized22' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized22' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized23' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized23' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+WARNING: [Synth 8-689] width (1) of port connection 'O' does not match port width (4) of module 'CARRY4' [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/keypad4X4.sv:523]
+WARNING: [Synth 8-350] instance 'count_reg[16]_i_1' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/keypad4X4.sv:519]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized24' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized24' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized25' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized25' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized26' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized26' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized27' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized27' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized28' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized28' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized29' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized29' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized30' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized30' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized31' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized31' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized32' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized32' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized33' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized33' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized34' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized34' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized35' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized35' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized1' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+	Parameter INIT bound to: 8'b11111110 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized1' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized2' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+	Parameter INIT bound to: 8'b11111110 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized2' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized3' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+	Parameter INIT bound to: 8'b11111110 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized3' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized4' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+	Parameter INIT bound to: 8'b11111110 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized4' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized1' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b0111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized1' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized36' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized36' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized2' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b0010000010101010 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized2' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized3' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b0010101000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized3' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized2' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+	Parameter INIT bound to: 4'b1110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized2' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized3' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+	Parameter INIT bound to: 4'b1110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized3' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized37' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized37' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized38' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized38' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized39' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized39' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized40' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized40' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized41' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized41' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized42' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized42' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized43' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized43' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized44' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized44' (12#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'keypad4X4' (13#1) [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/keypad4X4.sv:25]
+INFO: [Synth 8-638] synthesizing module 'SevSeg_4digit' [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/SevSeg_4digit.sv:39]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized4' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b0010000010010100 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized4' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized7' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+	Parameter INIT bound to: 64'b1111000010101010111111111100110011110000101010100000000011001100 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized7' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized8' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+	Parameter INIT bound to: 64'b1111000010101010111111111100110011110000101010100000000011001100 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized8' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized9' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+	Parameter INIT bound to: 64'b1111000010101010111111111100110011110000101010100000000011001100 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized9' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized10' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+	Parameter INIT bound to: 64'b1111000010101010111111111100110011110000101010100000000011001100 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized10' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized4' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+	Parameter INIT bound to: 4'b1110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized4' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized5' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+	Parameter INIT bound to: 4'b1011 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized5' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized6' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+	Parameter INIT bound to: 4'b1011 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized6' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized7' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+	Parameter INIT bound to: 4'b0111 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized7' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized5' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b1010110001001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized5' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized6' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b1010001000010000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized6' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized45' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized45' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized46' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized46' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized47' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized47' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized48' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized48' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized49' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized49' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized50' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized50' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized51' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized51' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized52' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized52' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+WARNING: [Synth 8-689] width (1) of port connection 'CO' does not match port width (4) of module 'CARRY4' [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/SevSeg_4digit.sv:314]
+WARNING: [Synth 8-689] width (2) of port connection 'O' does not match port width (4) of module 'CARRY4' [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/SevSeg_4digit.sv:317]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized53' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized53' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized54' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized54' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized55' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized55' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized56' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized56' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized57' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized57' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized58' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized58' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized59' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized59' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized60' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized60' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized61' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized61' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized62' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized62' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized7' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b1100001000010100 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized7' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized8' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b0101011100010000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized8' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized9' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b0101000110010000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized9' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized10' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b0100000000100101 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized10' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-256] done synthesizing module 'SevSeg_4digit' (14#1) [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/SevSeg_4digit.sv:39]
+INFO: [Synth 8-638] synthesizing module 'steppermotor_wrapper' [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/steppermotor_wrapper.sv:23]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized11' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+	Parameter INIT bound to: 64'b1100110011110011000000001111001111011101111100110001000111110011 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized11' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized12' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+	Parameter INIT bound to: 64'b1111111111111111111111111111111111111111111111111111111111111110 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized12' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized8' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+	Parameter INIT bound to: 4'b0001 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized8' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized11' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b1000000000001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized11' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized9' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+	Parameter INIT bound to: 4'b0001 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized9' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized12' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b1000000000001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized12' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized10' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+	Parameter INIT bound to: 4'b1011 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized10' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized11' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+	Parameter INIT bound to: 4'b1110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized11' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized13' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b1111111111111101 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized13' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized14' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b0001000000000100 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized14' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized15' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b0000000000100100 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized15' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized16' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b0000100010000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized16' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized5' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+	Parameter INIT bound to: 8'b00000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized5' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized17' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b0001000000000100 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized17' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized18' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b0000000000100100 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized18' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized19' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b0000100010000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized19' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized6' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+	Parameter INIT bound to: 8'b00000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized6' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized2' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20288]
+	Parameter INIT bound to: 32'b11111111111111111111111111111110 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized2' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20288]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized20' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b1000000001000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized20' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized21' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b0000000000010100 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized21' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized7' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+	Parameter INIT bound to: 8'b00000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized7' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized8' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+	Parameter INIT bound to: 8'b00000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized8' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized22' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b1000000001000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized22' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized23' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b0000000000010100 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized23' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized9' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+	Parameter INIT bound to: 8'b00000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized9' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized10' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+	Parameter INIT bound to: 8'b00000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized10' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized13' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+	Parameter INIT bound to: 64'b1111111111111111111111111111111111111111111111111111111111111110 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized13' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized3' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20288]
+	Parameter INIT bound to: 32'b11111111111111111011111111111111 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized3' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20288]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized11' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+	Parameter INIT bound to: 8'b11110111 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized11' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized12' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+	Parameter INIT bound to: 8'b11111101 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized12' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized63' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized63' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized64' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized64' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized65' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized65' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized66' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized66' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized67' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized67' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized68' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized68' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized69' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized69' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized70' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized70' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized71' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized71' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized72' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized72' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized73' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized73' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized74' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized74' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized75' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized75' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized76' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized76' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized77' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized77' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized78' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized78' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized79' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized79' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized80' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized80' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized81' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized81' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized82' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized82' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized83' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized83' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+WARNING: [Synth 8-350] instance 'count_reg[28]_i_11' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/steppermotor_wrapper.sv:581]
+WARNING: [Synth 8-350] instance 'count_reg[28]_i_14' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/steppermotor_wrapper.sv:587]
+WARNING: [Synth 8-689] width (3) of port connection 'CO' does not match port width (4) of module 'CARRY4' [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/steppermotor_wrapper.sv:595]
+WARNING: [Synth 8-350] instance 'count_reg[28]_i_20' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/steppermotor_wrapper.sv:600]
+WARNING: [Synth 8-350] instance 'count_reg[28]_i_25' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/steppermotor_wrapper.sv:606]
+WARNING: [Synth 8-689] width (2) of port connection 'CO' does not match port width (4) of module 'CARRY4' [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/steppermotor_wrapper.sv:614]
+WARNING: [Synth 8-350] instance 'count_reg[28]_i_4' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/steppermotor_wrapper.sv:612]
+WARNING: [Synth 8-689] width (2) of port connection 'CO' does not match port width (4) of module 'CARRY4' [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/steppermotor_wrapper.sv:620]
+WARNING: [Synth 8-350] instance 'count_reg[28]_i_5' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/steppermotor_wrapper.sv:618]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized84' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized84' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized85' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized85' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized86' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized86' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized87' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized87' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized88' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized88' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized89' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized89' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized90' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized90' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized91' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized91' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized4' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20288]
+	Parameter INIT bound to: 32'b10111000111111111011100000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized4' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20288]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized92' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized92' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized93' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized93' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized94' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized94' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized95' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized95' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized12' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+	Parameter INIT bound to: 4'b0001 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized12' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized96' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized96' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized97' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized97' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized98' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized98' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized14' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+	Parameter INIT bound to: 64'b0000000000000000111111111111111100010001111100000001000111110000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized14' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized13' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+	Parameter INIT bound to: 8'b01101100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized13' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized14' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+	Parameter INIT bound to: 8'b10111000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized14' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized99' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized99' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized100' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized100' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'stepmotor' [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/stepmotor.sv:23]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized13' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+	Parameter INIT bound to: 4'b1110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized13' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized14' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+	Parameter INIT bound to: 4'b0110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized14' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized101' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized101' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized102' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized102' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized103' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized103' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized15' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+	Parameter INIT bound to: 8'b01110100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized15' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20205]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized5' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20288]
+	Parameter INIT bound to: 32'b10010110111111111001011000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized5' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20288]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized104' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized104' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized105' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized105' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized6' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20288]
+	Parameter INIT bound to: 32'b00000000000000001000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized6' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20288]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized15' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized15' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized16' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized16' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized17' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized17' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20334]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized106' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized106' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized24' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b1000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized24' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized25' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b1000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized25' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized26' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b1000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized26' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized27' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b1001000000001001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized27' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized28' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b1000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized28' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized29' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b1000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized29' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized30' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+	Parameter INIT bound to: 16'b1000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized30' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20245]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized107' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized107' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+WARNING: [Synth 8-689] width (3) of port connection 'CO' does not match port width (4) of module 'CARRY4' [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/stepmotor.sv:308]
+WARNING: [Synth 8-350] instance 'count_reg[0]_i_1' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/stepmotor.sv:306]
+WARNING: [Synth 8-350] instance 'count_reg[0]_i_4' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/stepmotor.sv:319]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized108' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized108' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized109' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized109' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized110' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized110' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized111' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized111' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized112' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized112' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized113' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized113' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized114' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized114' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+WARNING: [Synth 8-689] width (3) of port connection 'CO' does not match port width (4) of module 'CARRY4' [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/stepmotor.sv:390]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized115' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized115' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized116' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized116' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized117' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized117' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized118' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized118' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized119' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized119' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized120' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized120' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized121' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized121' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized122' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized122' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized123' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized123' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized124' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized124' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized125' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized125' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized126' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized126' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized15' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+	Parameter INIT bound to: 4'b0110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized15' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized16' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+	Parameter INIT bound to: 4'b1001 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized16' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20168]
+INFO: [Synth 8-256] done synthesizing module 'stepmotor' (15#1) [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/stepmotor.sv:23]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized127' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized127' (15#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'steppermotor_wrapper' (16#1) [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/imports/Ready_Modules/steppermotor_wrapper.sv:23]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/new/game_logic.sv:98]
+INFO: [Synth 8-638] synthesizing module 'key_map' [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/new/key_map.sv:22]
+INFO: [Synth 8-256] done synthesizing module 'key_map' (17#1) [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/new/key_map.sv:22]
+INFO: [Synth 8-256] done synthesizing module 'game_logic' (18#1) [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/new/game_logic.sv:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:44 . Memory (MB): peak = 320.168 ; gain = 110.109
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:44 . Memory (MB): peak = 320.168 ; gain = 110.109
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/constrs_1/new/pins.xdc]
+Finished Parsing XDC File [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/constrs_1/new/pins.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/constrs_1/new/pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/game_logic_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/game_logic_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 616.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:01:19 . Memory (MB): peak = 616.059 ; gain = 406.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:01:19 . Memory (MB): peak = 616.059 ; gain = 406.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:01:19 . Memory (MB): peak = 616.059 ; gain = 406.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'leds_reg[3:0]' into 'in1_reg[3:0]' [C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.srcs/sources_1/new/game_logic.sv:117]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:01:19 . Memory (MB): peak = 616.059 ; gain = 406.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module game_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module code_gen 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+Module flopenr 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:01:22 . Memory (MB): peak = 616.059 ; gain = 406.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:01:43 . Memory (MB): peak = 616.059 ; gain = 406.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:01:44 . Memory (MB): peak = 616.059 ; gain = 406.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:01:44 . Memory (MB): peak = 616.059 ; gain = 406.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:01:45 . Memory (MB): peak = 616.059 ; gain = 406.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:01:45 . Memory (MB): peak = 616.059 ; gain = 406.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:01:45 . Memory (MB): peak = 616.059 ; gain = 406.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:01:45 . Memory (MB): peak = 616.059 ; gain = 406.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:01:45 . Memory (MB): peak = 616.059 ; gain = 406.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:01:45 . Memory (MB): peak = 616.059 ; gain = 406.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|game_logic  | random_code/state_reg[15] | 11     | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+---------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    30|
+|3     |LUT1   |     8|
+|4     |LUT2   |    22|
+|5     |LUT3   |    18|
+|6     |LUT4   |    33|
+|7     |LUT5   |     8|
+|8     |LUT6   |    26|
+|9     |SRL16E |     1|
+|10    |FDCE   |     4|
+|11    |FDPE   |    16|
+|12    |FDRE   |   138|
+|13    |IBUF   |     7|
+|14    |OBUF   |    24|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------------+---------------------+------+
+|      |Instance                     |Module               |Cells |
++------+-----------------------------+---------------------+------+
+|1     |top                          |                     |   336|
+|2     |  keypad4X4_inst0            |keypad4X4            |    83|
+|3     |  SevSeg_4digit_inst0        |SevSeg_4digit        |    39|
+|4     |  steppermotor_wrapper_inst0 |steppermotor_wrapper |   144|
+|5     |    stepmotor_inst0          |stepmotor            |    54|
+|6     |  random_code                |code_gen             |    20|
+|7     |  register                   |flopenr              |    10|
++------+-----------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:01:45 . Memory (MB): peak = 616.059 ; gain = 406.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:46 . Memory (MB): peak = 616.059 ; gain = 110.109
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:01:45 . Memory (MB): peak = 616.059 ; gain = 406.000
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+493 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:21 . Memory (MB): peak = 616.059 ; gain = 406.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Hamza K Swati/DigitalDesign/game_of_codes/game_of_codes.runs/synth_1/game_logic.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 616.059 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 17 17:13:42 2017...
